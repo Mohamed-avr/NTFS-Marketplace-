@@ -3,9 +3,11 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return  (
+    <div className=' bg-ground '> 
     <Layout>
       { <Component {...pageProps} />}
     </Layout>
+    </div>
   )
 }
 

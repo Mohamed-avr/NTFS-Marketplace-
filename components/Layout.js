@@ -1,11 +1,12 @@
 import Navbar from "./navbar";
 
-const Layout = ({children}) => {
-    return ( <div className="bg-ground " > 
-    <Navbar/>
-    { children}
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Navbar />
+      {children}
+    </div>
+  );
+};
 
-    </div> );
-}
- 
 export default Layout;
