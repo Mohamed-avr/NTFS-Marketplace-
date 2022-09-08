@@ -17,9 +17,9 @@ export default function Home() {
               <Navbar/>
            {/* ----------- */}
       <main className=" ">
-        <section className="pt-40  flex justify-between  sm:flex-flow flex-wrap  w-full  ">
+        <section className="sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">
           {/*  top */}
-          <div className=" sm:pl-20 z-10 ">
+          <div className=" sm:pl-20  z-10 ">
             <h2 className=" sm:text-7xl  text-4xl sm:w-[40rem] w-11/12 font-bold sm:text-left text-center sm:m-0 m-auto leading-normal" > Explore, Buy and Sell the <span className=" text-primary "> Best <br/> NFTs!</span>  </h2>
             <div className=" mt-10 text-lg flex sm:justify-start justify-center flex-wrap my-2 "> 
              <button className=" py-2 px-14 bg-primary text-black font-medium "> Explore</button>
