@@ -14,7 +14,8 @@ module.exports = {
         'card':'#3D2942',
       },
       fontFamily: {
-        'body':['Oxanium'],
+        'body':['cursive' ],
+        'Second' : ['Poppins']
       }
     },
   },
