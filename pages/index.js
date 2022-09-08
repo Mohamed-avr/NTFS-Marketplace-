@@ -17,18 +17,20 @@ export default function Home() {
               <Navbar/>
            {/* ----------- */}
       <main className=" ">
-        <section className="pt-40  flex -z-10 pl-16 ">
+        <section className="pt-40  flex justify-between  sm:flex-flow flex-wrap  w-full  ">
           {/*  top */}
-          <div>
-            <h2 className=" text-7xl w-[40rem] leading-normal" > Explore, Buy and Sell the <span className=" text-primary "> Best <br/> NFTs!</span>  </h2>
-            <div className=" mt-10 text-lg "> 
+          <div className=" sm:pl-20 z-10 ">
+            <h2 className=" sm:text-7xl  text-4xl sm:w-[40rem] w-11/12 font-bold sm:text-left text-center sm:m-0 m-auto leading-normal" > Explore, Buy and Sell the <span className=" text-primary "> Best <br/> NFTs!</span>  </h2>
+            <div className=" mt-10 text-lg flex sm:justify-start justify-center flex-wrap my-2 "> 
              <button className=" py-2 px-14 bg-primary text-black font-medium "> Explore</button>
-             <button className=" py-2 px-14 bg-primary  font-medium  ml-4 border-primary border text-white bg-blure/50  "> Create</button>
+             <button className=" py-2 px-14 bg-primary   font-medium  ml-4 border-primary border text-white bg-blure/50  "> Create</button>
           </div>
           </div>
           {/* bottom */}
-          <div className=" bg-blure/50 w-2/4 h-[40rem] -mt-40 ">
-
+          <div className=" z-0 bg-blure/50 sm:w-2/5 w-full   sm:h-[40rem] sm:-mt-40 -mt-7 flex justify-center items-center align-middle sm:pb-0 pb-20 ">
+               <div className="w-[20rem] h-[25rem]   flex justify-center items-center align-middle sm:-ml-36 sm:mt-36  mt-20   "> 
+                 <Image   alt="HeroImage" src='/Heroimage.jpg' width='400px' height='500' />
+                </div>
           </div>
         </section>
       </main>
