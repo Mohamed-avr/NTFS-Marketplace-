@@ -39,8 +39,8 @@ export default function Home() {
             </div>
           </div>
           {/* bottom */}
-          <div className=" z-0 bg-blure/50 sm:w-2/5 w-full   sm:h-[40rem] sm:-mt-40 -mt-7 flex justify-center items-center align-middle sm:pb-0 pb-20 ">
-            <div className="w-[20rem] h-[25rem]   flex justify-center items-center align-middle sm:-ml-36 sm:mt-36  mt-20   ">
+          <div className=" relative z-0 bg-blure/50 sm:w-2/5 w-full   sm:h-[40rem] sm:-mt-40 -mt-7 flex justify-center items-center align-middle sm:pb-0 pb-20 ">
+            <div className="  w-[20rem] h-[25rem]   flex justify-center items-center align-middle sm:-ml-36 sm:mt-36  mt-20   ">
               <Image
                 alt="HeroImage"
                 src="/Heroimage.jpg"
@@ -48,6 +48,8 @@ export default function Home() {
                 height="500"
               />
             </div>
+            <div className=" w-20 h-20 bg-gray-50/30 rounded-full absolute -bottom-10 -left-10  flex justify-center items-center align-middle  "> </div>
+           
           </div>
         </section>
         <article className="sm:pl-14 sm:-mt-28 mt-10 ">
