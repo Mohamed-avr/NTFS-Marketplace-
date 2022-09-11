@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       <Navbar />
       {/* ----------- */}
       <main className=" ">
-        <section className="sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">
+        <section className=" h-screen sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">
           {/*  top */}
           <div className=" sm:pl-20  z-10 ">
             <h2 className=" sm:text-7xl  text-4xl sm:w-[40rem] w-11/12 font-bold sm:text-left text-center sm:m-0 m-auto leading-normal">
@@ -48,11 +49,13 @@ export default function Home() {
                 height="500"
               />
             </div>
-            <div className=" w-20 h-20 bg-gray-50/30 rounded-full absolute -bottom-10 -left-10  flex justify-center items-center align-middle  "> </div>
+            <div className=" w-20 h-20  bg-neutral-500/30 rounded-full absolute -bottom-10 -left-10  flex justify-center items-center align-middle ">
+              <a href="#Footer" > <Image alt="" width='30px' height='40px' src='/ArrowIcon.png'  /> </a> 
+            </div>
            
           </div>
         </section>
-        <article className="sm:pl-14 sm:-mt-28 mt-10 ">
+        <article className=" h-screen sm:pl-14 sm:-mt-28 mt-10 ">
           <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full "> 
           <div className="text-center">
             <h3 className="font-bold">32k+</h3>
@@ -69,6 +72,10 @@ export default function Home() {
            </div>
         </article>
       </main>
+
+      <footer id="Footer" >
+
+      </footer>
     </div>
   );
 }
