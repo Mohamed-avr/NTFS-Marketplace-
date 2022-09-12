@@ -49,14 +49,15 @@ export default function Home() {
                 height="500"
               />
             </div>
-            <div className=" w-20 h-20  bg-neutral-500/30 rounded-full absolute -bottom-10 -left-10  flex justify-center items-center align-middle ">
-              <a href="#Footer" > <Image alt="" width='30px' height='40px' src='/ArrowIcon.png'  /> </a> 
+            <div className=" sm:w-20 sm:h-20 w-16 h-16  bg-neutral-500/30 rounded-full absolute sm:-bottom-10 -bottom-8  sm:-left-10  flex justify-center items-center align-middle ">
+              <a href="#
+              Footer" > <Image alt="" width='30px' height='40px' src='/ArrowIcon.png'  /> </a> 
             </div>
            
           </div>
         </section>
-        <article className=" h-screen sm:pl-14 sm:-mt-28 mt-10 ">
-          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full "> 
+        <article className=" h-screen sm:pl-14 sm:-mt-28 ">
+          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full mt-[25rem] "> 
           <div className="text-center">
             <h3 className="font-bold">32k+</h3>
             <h4 className="text-base text-white/50 capitalize mt-[5px] ">artworks</h4>
