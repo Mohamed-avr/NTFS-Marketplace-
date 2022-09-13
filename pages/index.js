@@ -56,8 +56,8 @@ export default function Home() {
            
           </div>
         </section>
-        <article className=" h-screen sm:pl-14 sm:-mt-28 ">
-          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full mt-[25rem] "> 
+        <article className=" h-auto sm:pl-14 sm:-mt-28 ">
+          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full sm:-mt-14 mt-[23rem] "> 
           <div className="text-center">
             <h3 className="font-bold">32k+</h3>
             <h4 className="text-base text-white/50 capitalize mt-[5px] ">artworks</h4>
@@ -72,6 +72,27 @@ export default function Home() {
           </div> 
            </div>
         </article>
+
+        <section className="bg-purple mt-32 ">
+           <article className="flex justify-around  items-start align-middle flex-flow flex-wrap " >
+     
+           <div>
+                <Image alt="brandOne"  src='/Brands/Vector.png' width={130} height={30}  />
+              </div>
+                      
+              <div>
+                <Image alt="brandOne"  src='/Brands/Vector1.png' width={180} height={25}  />
+              </div>
+              <div>
+                <Image alt="brandOne"  src='/Brands/binance1.png' width={160} height={40}  />
+              </div>
+              <div>
+                <Image alt="brandOne"  src='/Brands/bitmex1.png' width={140} height={26}  />
+              </div>
+ 
+              
+           </article>
+        </section>
       </main>
 
       <footer id="Footer" >
