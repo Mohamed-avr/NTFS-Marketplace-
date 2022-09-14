@@ -50,54 +50,84 @@ export default function Home() {
               />
             </div>
             <div className=" sm:w-20 sm:h-20 w-16 h-16  bg-neutral-500/30 rounded-full absolute sm:-bottom-10 -bottom-8  sm:-left-10  flex justify-center items-center align-middle ">
-              <a href="#
-              Footer" > <Image alt="" width='30px' height='40px' src='/ArrowIcon.png'  /> </a> 
+              <a
+                href="#
+              Footer"
+              >
+                {" "}
+                <Image
+                  alt=""
+                  width="30px"
+                  height="40px"
+                  src="/ArrowIcon.png"
+                />{" "}
+              </a>
             </div>
-           
           </div>
         </section>
         <article className=" h-auto sm:pl-14 sm:-mt-28 ">
-          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full sm:-mt-14 mt-[23rem] "> 
-          <div className="text-center">
-            <h3 className="font-bold">32k+</h3>
-            <h4 className="text-base text-white/50 capitalize mt-[5px] ">artworks</h4>
-          </div> 
-          <div className="text-center">
-            <h3 className="font-bold">20k+</h3>
-            <h4 className="text-base text-white/50 capitalize mt-[5px] ">auctions</h4>
-          </div> 
-          <div className="text-center">
-            <h3 className="font-bold">12k+</h3>
-            <h4 className="text-base text-white/50 capitalize mt-[5px] ">creators</h4>
-          </div> 
-           </div>
+          <div className="flex justify-around space-x-3 items-center sm:w-[25rem] w-full sm:-mt-14 mt-[23rem] ">
+            <div className="text-center">
+              <h3 className="font-bold">32k+</h3>
+              <h4 className="text-base text-white/50 capitalize mt-[5px] ">
+                artworks
+              </h4>
+            </div>
+            <div className="text-center">
+              <h3 className="font-bold">20k+</h3>
+              <h4 className="text-base text-white/50 capitalize mt-[5px] ">
+                auctions
+              </h4>
+            </div>
+            <div className="text-center">
+              <h3 className="font-bold">12k+</h3>
+              <h4 className="text-base text-white/50 capitalize mt-[5px] ">
+                creators
+              </h4>
+            </div>
+          </div>
         </article>
 
-        <section className="bg-purple mt-32 ">
-           <article className="flex justify-around  items-start align-middle flex-flow flex-wrap " >
-     
-           <div>
-                <Image alt="brandOne"  src='/Brands/Vector.png' width={130} height={30}  />
-              </div>
-                      
-              <div>
-                <Image alt="brandOne"  src='/Brands/Vector1.png' width={180} height={25}  />
-              </div>
-              <div>
-                <Image alt="brandOne"  src='/Brands/binance1.png' width={160} height={40}  />
-              </div>
-              <div>
-                <Image alt="brandOne"  src='/Brands/bitmex1.png' width={140} height={26}  />
-              </div>
- 
-              
-           </article>
+        <section className="bg-purple sm:mt-32 mt-16  ">
+          <article className="flex justify-around  items-start align-middle flex-flow flex-wrap ">
+            <div className="my-4">
+              <Image
+                alt="brandOne"
+                src="/Brands/Vector.png"
+                width={130}
+                height={30}
+              />
+            </div>
+
+            <div className="my-4">
+              <Image
+                alt="brandOne"
+                src="/Brands/Vector1.png"
+                width={180}
+                height={25}
+              />
+            </div>
+            <div className="my-4">
+              <Image
+                alt="brandOne"
+                src="/Brands/binance1.png"
+                width={160}
+                height={40}
+              />
+            </div>
+            <div className="my-4">
+              <Image
+                alt="brandOne"
+                src="/Brands/bitmex1.png"
+                width={140}
+                height={26}
+              />
+            </div>
+          </article>
         </section>
       </main>
 
-      <footer id="Footer" >
-
-      </footer>
+      <footer id="Footer"></footer>
     </div>
   );
 }
