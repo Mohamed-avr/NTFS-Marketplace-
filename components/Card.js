@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-const Card = () => {
+const Card = ( {children} ) => {
   return (
-    <article className=" bg-card p-2 w-[18rem] h-[26rem] flex justify-center flex-col   ">
+    <article className=" bg-card p-2 w-[18rem] h-[26rem] flex justify-center flex-col items-center  ">
       <div className=" w-[16rem]  h-[14rem] overflow-hidden mt-2">
         <Image
           src="/CardImages/image9.png"
@@ -11,37 +11,42 @@ const Card = () => {
           height={"340px"}
         />
       </div>
-      <div className="p-2 flex justify-between align-middle mt-1 ">
+      <div className="p-2 flex flex-col justify-between align-middle mt-3 w-full items-center  ">
 
-        <div className="flex justify-between w-full  ">
+        <div className="flex justify-between w-full h-10  ">
           <div className=" flex  ">
             <Image
               alt=""
               src="/CardImages/image9.png"
-              width={"45px"}
-              height={"45px"}
+              width={"43px"}
+              height={"40px"}
               className='rounded-full'
             />
-           <div className="ml-2 flex flex-col align-middle items-center  ">
-            <h4 className="text-lg capitalize ">virtual art </h4>
-            {/* <h5 className="text-sm text-white/70 "> by @wzard</h5> */}
+           <div className="ml-2 flex flex-col align-middle items-center -mt-2  ">
+            <h4 className="text-lg capitalize ">virtual art  {children.name} </h4>
+            <h5 className="text-sm opacity-30 "> by @wzard  {children}</h5>
            </div>
           </div>
 
-          <div className="flex items-center ">
+          <div className="flex items-center opacity-30 ">
           <Image
               alt=""
-              src="/CardImages/image9.png"
-              width={"40px"}
-              height={"40px"}
+              src="/CardImages/Icon.svg"
+              width={"20px"}
+              height={"23px"}
             />
-            <span className="text-lg mx-1" >92</span>
+            <span className="text-lg mx-1 " >92 {children}</span>
           </div>
-
         </div>
 
-        <div></div>
-        <div></div>
+        <div className="flex justify-between  w-full mt-4 capitalize " >
+             <h5 className=" text-base opacity-50 text-white  " > current bit  </h5>
+             <h5 className=" text-base  text-white font-medium  " > 4.89 {children} ETH  </h5>
+             
+        </div>
+        <div > 
+          <button className="bg-blure/60  border border-white/70 mt-7 w-[16rem] text-base py-2 capitalize hover:bg-primary/90 active:bg-primary/70 "> place a bid </button>
+        </div>
       </div>
     </article>
   );

@@ -6,6 +6,28 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 
 export default function Home() {
+
+  const cardInfo = [{
+    'id': 1 , 
+    'name': "nft" , 
+    'artist': " artiste One" ,
+    'likes' : 23 , 
+    'the price': 34.3 
+  }, {
+    'id': 2 , 
+    'name': "nft" , 
+    'artist': " artiste One" ,
+    'likes' : 23 , 
+    'the price': 34.3 
+  }, {
+    'id': 3 , 
+    'name': "nft" , 
+    'artist': " artiste One" ,
+    'likes' : 23 , 
+    'the price': 34.3 
+  }];
+
+
   return (
     <div className=" text-3xl text-white ">
       <Head>
@@ -131,16 +153,19 @@ export default function Home() {
         {/*  */}
         <section className=" mt-16 bg-section/10 flex justify-center flex-col py-16 ">
           <div className="flex justify-center items-center ">
-             <span className=" bg-purpled w-16 h-16 rounded-full ">  </span>
-             <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
+            <span className=" bg-purpled w-16 h-16 rounded-full "> </span>
+            <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
           </div>
-          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 ">
-           <Card/>
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 space-x-6  ">
+            
+             { cardInfo.map((e ) => {
+                  return (
+                    <Card  key={e}  data={cardInfo} />
+                  )
+             })  }
           </div>
         </section>
         {/*  */}
-
-
       </main>
 
       <footer id="Footer"></footer>
