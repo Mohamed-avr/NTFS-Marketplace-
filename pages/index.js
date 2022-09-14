@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -125,6 +126,21 @@ export default function Home() {
             </div>
           </article>
         </section>
+        {/*  */}
+
+        {/*  */}
+        <section className=" mt-16 bg-section/10 flex justify-center flex-col py-16 ">
+          <div className="flex justify-center items-center ">
+             <span className=" bg-purpled w-16 h-16 rounded-full ">  </span>
+             <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
+          </div>
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 ">
+           <Card/>
+          </div>
+        </section>
+        {/*  */}
+
+
       </main>
 
       <footer id="Footer"></footer>
