@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className=""> creators </li>
             <li className=""> comunity </li>
           </ul>
-          <button className="  border-primary border py-2 px-6  text-primary bg-blure/60  text-base ">
+          <button className="  border-primary border py-2 px-6  text-primary bg-blure/60 capitalize text-base ">
             connect wallet
           </button>
 

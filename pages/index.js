@@ -168,8 +168,15 @@ export default function Home() {
                   )
              })  }
           </div>
+          <div className=" mt-10 m-auto">
+            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70"> view all </button>
+          </div>
         </section>
+
         {/*  */}
+      <section>
+
+      </section>
       </main>
 
       <footer id="Footer"></footer>
