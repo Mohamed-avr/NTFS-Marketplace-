@@ -6,31 +6,32 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 
 export default function Home() {
-
-  const cardInfo = [{
-    'id': 1 , 
-    'name': "virtual art" , 
-    'artist': "artiste One" ,
-    'likes' : 28 , 
-    'price': 34.2 ,
-    'imageNFT':'/image9.png'
-
-  }, {
-    'id': 2 , 
-    'name': "Virtual design" , 
-    'artist': " artiste One" ,
-    'likes' : 75 , 
-    'price': 49.1 ,
-    'imageNFT':'/image10.png'
-  }, {
-    'id': 3 , 
-    'name': "Virtual magic" , 
-    'artist': " artiste One" ,
-    'likes' : 14 , 
-    'price': 28.2 ,
-    'imageNFT':'/Image.png'
-  }];
-
+  const cardInfo = [
+    {
+      id: 1,
+      name: "virtual art",
+      artist: "artiste One",
+      likes: 28,
+      price: 34.2,
+      imageNFT: "/image9.png",
+    },
+    {
+      id: 2,
+      name: "Virtual design",
+      artist: " artiste One",
+      likes: 75,
+      price: 49.1,
+      imageNFT: "/image10.png",
+    },
+    {
+      id: 3,
+      name: "Virtual magic",
+      artist: " artiste One",
+      likes: 14,
+      price: 28.2,
+      imageNFT: "/Image.png",
+    },
+  ];
 
   return (
     <div className=" text-3xl text-white ">
@@ -160,23 +161,36 @@ export default function Home() {
             <span className=" bg-purpled w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
           </div>
-          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 sm:space-x-6 space-y-6 sm:space-y-0 ">
-            
-             { cardInfo.map((e ) => {
-                  return (
-                    <Card  key={e}  name={e.name} artist={e.artist} likes={e.likes} price={e.price} image={e.imageNFT} />
-                  )
-             })  }
+          <div className=" hidden sm:block my-4 bg-yellow-300 ">
+            <article className="flex absolute right-20 text-xs space-x-2 ">
+              <div className="w-8 h-8 bg-white rounded-full opacity-20 ">  </div>
+              <div className="w-8 h-8 bg-white rounded-full ">  </div>
+            </article>
+          </div>
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-6 space-y-6 sm:space-y-0 ">
+            {cardInfo.map((e) => {
+              return (
+                <Card
+                  key={e}
+                  name={e.name}
+                  artist={e.artist}
+                  likes={e.likes}
+                  price={e.price}
+                  image={e.imageNFT}
+                />
+              );
+            })}
           </div>
           <div className=" mt-10 m-auto">
-            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70"> view all </button>
+            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
+              {" "}
+              view all{" "}
+            </button>
           </div>
         </section>
 
         {/*  */}
-      <section>
-
-      </section>
+        <section></section>
       </main>
 
       <footer id="Footer"></footer>
