@@ -9,22 +9,26 @@ export default function Home() {
 
   const cardInfo = [{
     'id': 1 , 
-    'name': "nft" , 
-    'artist': " artiste One" ,
-    'likes' : 23 , 
-    'the price': 34.3 
+    'name': "virtual art" , 
+    'artist': "artiste One" ,
+    'likes' : 28 , 
+    'price': 34.2 ,
+    'imageNFT':'/image9.png'
+
   }, {
     'id': 2 , 
-    'name': "nft" , 
+    'name': "Virtual design" , 
     'artist': " artiste One" ,
-    'likes' : 23 , 
-    'the price': 34.3 
+    'likes' : 75 , 
+    'price': 49.1 ,
+    'imageNFT':'/image10.png'
   }, {
     'id': 3 , 
-    'name': "nft" , 
+    'name': "Virtual magic" , 
     'artist': " artiste One" ,
-    'likes' : 23 , 
-    'the price': 34.3 
+    'likes' : 14 , 
+    'price': 28.2 ,
+    'imageNFT':'/Image.png'
   }];
 
 
@@ -156,11 +160,11 @@ export default function Home() {
             <span className=" bg-purpled w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
           </div>
-          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 space-x-6  ">
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-10 sm:space-x-6 space-y-6 sm:space-y-0 ">
             
              { cardInfo.map((e ) => {
                   return (
-                    <Card  key={e}  data={cardInfo} />
+                    <Card  key={e}  name={e.name} artist={e.artist} likes={e.likes} price={e.price} image={e.imageNFT} />
                   )
              })  }
           </div>
