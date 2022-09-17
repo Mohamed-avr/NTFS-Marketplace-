@@ -1,9 +1,19 @@
 import Image from "next/image";
+import { useRef } from "react";
 
 const Navbar = () => {
+  const NavRef = useRef();
+
+  // window.onscroll = () => {
+  //   if( window.scrollY == 200) {
+  //     NavRef.current.classList.remove('bg-ground/90')
+  //     NavRef.current.classList.add('bg-ground')
+  //   }
+  // }
+
   return (
     <>
-      <nav className="h-[5rem] flex justify-evenly items-center align-middle py-10  fixed top-0 left-0 w-full  z-20 bg-ground/90 sm:bg-transparent  ">
+      <nav ref={NavRef} className="h-[5rem] flex justify-evenly items-center align-middle py-10  fixed top-0 left-0 w-full  z-20 bg-ground/90 sm:bg-transparent  ">
         {/* top */}
         <div className="flex sm:justify-start justify-between sm:px-0 px-5 sm:w-2/6 w-full  items-center">
           <Image  className="" src={"/logo.svg"} alt={"logo"} width='33px' height='33px' />

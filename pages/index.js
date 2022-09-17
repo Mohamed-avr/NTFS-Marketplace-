@@ -162,12 +162,12 @@ export default function Home() {
             <h3 className=" capitalize font-medium -ml-8 ">live auction</h3>
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 ">
-            <article className="flex absolute right-20 text-xs space-x-2 ">
+            <article className="flex absolute right-28 text-xs space-x-2 ">
               <div className="w-8 h-8 bg-white rounded-full opacity-20 ">  </div>
               <div className="w-8 h-8 bg-white rounded-full ">  </div>
             </article>
           </div>
-          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-6 space-y-6 sm:space-y-0 ">
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0 ">
             {cardInfo.map((e) => {
               return (
                 <Card
