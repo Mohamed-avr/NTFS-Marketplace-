@@ -1,15 +1,37 @@
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef , useEffect } from "react";
 
+
+
+//  function checker
+// const windowChecker = (hight , element) => {
+//   const windowScreen = window.onscroll ;
+//   windowScreen = function() {
+//     if(windowScreen > hight) {
+//       element.classList.remove('bg-ground/90')
+//       element.classList.add('bg-ground')
+//     }
+
+//     if(windowScreen < hight) {
+//       element.classList.add('bg-ground/90')
+//       element.classList.remove('bg-ground')
+//     }
+
+//   }
+// }
+
+// the Component
 const Navbar = () => {
   const NavRef = useRef();
+  useEffect(() => {
+    // window is accessible here.
+   document.onmouseup = function() {
+    console.log("window.innerHeight", window.innerHeight);
+   }
+  }, []);
 
-  // window.onscroll = () => {
-  //   if( window.scrollY == 200) {
-  //     NavRef.current.classList.remove('bg-ground/90')
-  //     NavRef.current.classList.add('bg-ground')
-  //   }
-  // }
+  // windowChecker(100 ,NavRef.current )
+
 
   return (
     <>

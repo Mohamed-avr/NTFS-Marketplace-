@@ -190,7 +190,11 @@ export default function Home() {
         </section>
 
         {/*  */}
-        <section></section>
+        <section className="h-screen">
+        <div className="flex justify-center items-center ">
+            <h3 className=" capitalize font-medium mt-20 ">live auction</h3>
+          </div>
+        </section>
       </main>
 
       <footer id="Footer"></footer>
