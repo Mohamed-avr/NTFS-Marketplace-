@@ -2,11 +2,6 @@ import Image from "next/image";
 import { useRef , useEffect } from "react";
 
 
-
-//  function checker
-
-
-
 // the Component
 const Navbar = () => {
   const NavRef = useRef();
@@ -27,18 +22,13 @@ const Navbar = () => {
         NavRef.current.classList.add('bg-ground/90')
         NavRef.current.classList.remove('bg-ground')
         NavRef.current.classList.add('sm:bg-transparent')
-        NavRef.current.classList.remove('sm:bg-ground')
+        NavRef.current.classList.remove
+        ('sm:bg-ground')
       }
 
     }
     }
-
-  
- 
-
   // windowChecker(100 ,NavRef.current )
-
-
   return (
     <>
       <nav ref={NavRef} className="h-[5rem] flex justify-evenly items-center align-middle py-10  fixed top-0 left-0 w-full  z-20 bg-ground/90 sm:bg-transparent  ">
