@@ -163,7 +163,9 @@ export default function Home() {
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 ">
             <article className="flex absolute right-28 text-xs space-x-2 ">
-              <div className="w-8 h-8 bg-white rounded-full opacity-20 ">  </div>
+              <div className="w-8 h-8 bg-white rounded-full opacity-20  ">   
+                 <Image className="m-auto" alt="imageLeft" src={'/ArrowLeft.png'} height='20px' width='20px' />
+               </div>
               <div className="w-8 h-8 bg-white rounded-full ">  </div>
             </article>
           </div>
