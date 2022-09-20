@@ -33,6 +33,7 @@ export default function Home() {
     },
   ];
 
+
   return (
     <div className=" text-3xl text-white ">
       <Head>
@@ -163,10 +164,22 @@ export default function Home() {
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 ">
             <article className="flex absolute right-28 text-xs space-x-2 ">
-              <div className="w-8 h-8 bg-white rounded-full opacity-20  ">   
-                 <Image className="m-auto" alt="imageLeft" src={'/ArrowLeft.png'} height='20px' width='20px' />
-               </div>
-              <div className="w-8 h-8 bg-white rounded-full ">  </div>
+              <button className="w-8 h-8 bg-white rounded-full opacity-20 flex justify-center items-center hover:bg-gray-200  ">
+                <Image
+                  alt="imageLeft"
+                  src={"/ArrowLeft.png"}
+                  height="25px"
+                  width="30px"
+                />
+              </button>
+              <button className="w-8 h-8 bg-white rounded-full flex justify-center items-center  hover:bg-gray-200 ">
+                <Image
+                  alt="imageLeft"
+                  src={"/ArrowRight.png"}
+                  height="25px"
+                  width="30px"
+                />
+              </button>
             </article>
           </div>
           <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0 ">
@@ -193,8 +206,12 @@ export default function Home() {
 
         {/*  */}
         <section className="h-screen">
-        <div className="flex justify-center items-center ">
+          <div className="flex justify-center items-center ">
             <h3 className=" capitalize font-medium mt-20 ">live auction</h3>
+          </div>
+          {/*  elements */}
+          <div className="flex justify-between items-center "> 
+              
           </div>
         </section>
       </main>
