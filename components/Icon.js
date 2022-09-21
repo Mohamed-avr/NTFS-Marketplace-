@@ -11,7 +11,7 @@ const Icon = (props) => {
             height={"30px"}
           />
         </div>
-        <h3 className="capitalize text-primary text-base mt-4 "> {props.title} </h3>
+        <h3 className="capitalize text-primary text-base mt-4 font-medium "> {props.title} </h3>
       </article>
 
   );

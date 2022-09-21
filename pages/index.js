@@ -205,32 +205,64 @@ export default function Home() {
         </section>
 
         {/*  */}
-        <section className="h-screen">
+        <section >
           <div className="flex justify-center items-center ">
-            <h3 className=" capitalize font-medium mt-20 ">live auction</h3>
+            <h3 className=" capitalize font-medium mt-20 ">how it works</h3>
           </div>
           {/*  elements */}
           <div className="flex justify-center items-center   sm:flex-row flex-col   align-middle mt-20 ">
             <Icon
-              image={"/Icons/bi_collection.png"}
+              image={"/Icons/img1.png"}
               title="Set up your wallet"
             />
-            <div className="sm:-mt-10 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90 ">
+            <div className="sm:-mt-10  sm:mb-0 mb-16 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90  ">
               <Image alt="line" src={"/Vector1.png"} width={120} height={10} />
             </div>
             <Icon
               image={"/Icons/bi_collection.png"}
-              title="Set up your wallet"
+              title="Create your collection"
             />
-            <div className="sm:-mt-10 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90 ">
+            <div className="sm:-mt-10  sm:mb-0 mb-16 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90  ">
               <Image alt="line" src={"/Vector1.png"} width={120} height={10} />
             </div>
             <Icon
-              image={"/Icons/bi_collection.png"}
-              title="Set up your wallet"
+              image={"/Icons/fluent_collections-24-regular.png"}
+              title="add your NFT's"
+            />
+              <div className="sm:-mt-10  sm:mb-0 mb-16 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90  ">
+              <Image alt="line" src={"/Vector1.png"} width={120} height={10} />
+            </div>
+            <Icon
+              image={"/Icons/icon-park-outline_sales-report.png"}
+              title="List them for sale"
             />
           </div>
         </section>
+        {/*  */}
+
+        {/*  */}
+               {/*  */}
+               <section className=" mt-16 bg-section/10 flex justify-center flex-col py-16 ">
+          <div className="flex justify-center items-center ">
+            <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
+            <h3 className=" capitalize font-medium -ml-8 ">Popular Collections</h3>
+          </div>
+          <div className=" hidden sm:block my-4 bg-yellow-300 ">
+            <article className="flex absolute right-28 text-xs space-x-2 ">
+              <button className="w-8 h-8 bg-white rounded-full flex justify-center items-center  hover:bg-gray-200 ">
+                <Image
+                  alt="imageLeft"
+                  src={"/ArrowRight.png"}
+                  height="25px"
+                  width="30px"
+                />
+              </button>
+            </article>
+            </div>
+            </section>
+            
+
+
       </main>
 
       <footer id="Footer"></footer>

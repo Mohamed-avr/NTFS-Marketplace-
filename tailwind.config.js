@@ -14,6 +14,7 @@ module.exports = {
         'card':'#3D2942',
         'section':'#76607A',
         'cards':'#3D2942',
+        'redbobble':'#E03054',
       },
       fontFamily: {
         'body':['cursive' ],
