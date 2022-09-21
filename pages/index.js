@@ -34,7 +34,6 @@ export default function Home() {
     },
   ];
 
-
   return (
     <div className=" text-3xl text-white ">
       <Head>
@@ -211,9 +210,25 @@ export default function Home() {
             <h3 className=" capitalize font-medium mt-20 ">live auction</h3>
           </div>
           {/*  elements */}
-          <div className="flex justify-center items-center   sm:flex-row flex-col   align-middle mt-20 "> 
-              <Icon image={'/Icons/bi_collection.png'} title='Set up your wallet'/>
-               <div className="sm:-mt-10 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90 "> <Image  alt="line" src={'/Vector1.png'} width={120} height={10}  /></div>
+          <div className="flex justify-center items-center   sm:flex-row flex-col   align-middle mt-20 ">
+            <Icon
+              image={"/Icons/bi_collection.png"}
+              title="Set up your wallet"
+            />
+            <div className="sm:-mt-10 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90 ">
+              <Image alt="line" src={"/Vector1.png"} width={120} height={10} />
+            </div>
+            <Icon
+              image={"/Icons/bi_collection.png"}
+              title="Set up your wallet"
+            />
+            <div className="sm:-mt-10 mt-16 sm:ml-0 ml-3 sm:rotate-0 rotate-90 ">
+              <Image alt="line" src={"/Vector1.png"} width={120} height={10} />
+            </div>
+            <Icon
+              image={"/Icons/bi_collection.png"}
+              title="Set up your wallet"
+            />
           </div>
         </section>
       </main>
