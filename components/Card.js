@@ -22,7 +22,7 @@ const Card = ( {name , artist , likes , price ,image} ) => {
           <div className=" flex  ">
             <Image
               alt=""
-              src="/CardImages/image9.png"
+              src="/Person2.png"
               width={"43px"}
               height={"40px"}
               className='rounded-full'
