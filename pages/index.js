@@ -250,24 +250,30 @@ export default function Home() {
             </h3>
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 ">
-            <article className="flex absolute right-28 text-xs space-x-2 ">
-              <button className="w-8 h-8 bg-white rounded-full flex justify-center  items-center  hover:bg-gray-200 ">
+            <article className="flex absolute right-28 text-xs space-x-2 z-10">
+              <button className="w-10 h-10 bg-white rounded-full flex justify-center  items-center  hover:bg-gray-200 mt-40  mr-12">
                 <Image
                   alt="imageLeft"
                   src={"/ArrowRight.png"}
                   height="25px"
-                  width="30px"
+                  width="23px"
                 />
               </button>
             </article>
           </div>
 
           <div className="flex justify-center items-center sm:flex-row flex-col mt-6 ">
-             
-                 <PopularCol/>
-                 <PopularCol/>
-                 <PopularCol/>
-            
+          
+                 <PopularCol image={'/image.png'}/>
+                 <PopularCol image={'/image11.png'}/>
+                 <PopularCol image={'/image.png'}/>
+              
+          </div>
+          <div className=" mt-10 m-auto">
+            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
+              {" "}
+              view all{" "}
+            </button>
           </div>
 
         </section>

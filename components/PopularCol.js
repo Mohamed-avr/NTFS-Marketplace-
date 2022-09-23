@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const PopularCol = () => {
+const PopularCol = (props) => {
   return (
     <article className="bg-cards p-5  w-[320px] h-[300px] sm:mx-4 mx-0  sm:my-0 my-4  ">
       <div>
         <Image
-          src={"/image.png"}
+          src={props.image}
           alt="imageCollection"
           width={"280px"}
           height={"200px"}
