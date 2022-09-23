@@ -6,37 +6,38 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import Icon from "../components/Icon";
 import PopularCol from "../components/PopularCol";
+import CardTypeTow from "../components/CardTypeTow";
 
 export default function Home() {
   const cardInfo = [
     {
-      id: 1,
+      id: 0,
       name: "virtual art",
       artist: "artiste One",
       likes: 28,
       price: 34.2,
       imageNFT: "/image9.png",
+      buttonSell: true,
     },
     {
-      id: 2,
+      id: 1,
       name: "Virtual design",
       artist: " artiste One",
       likes: 75,
       price: 49.1,
       imageNFT: "/image10.png",
+      buttonSell: false,
     },
     {
-      id: 3,
+      id: 2,
       name: "Virtual magic",
       artist: " artiste One",
       likes: 14,
       price: 28.2,
       imageNFT: "/Image.png",
+      buttonSell: false,
     },
   ];
-
-  // function repeating 
-  const repeatingCom = () => {}
 
   return (
     <div className=" text-3xl text-white ">
@@ -242,7 +243,7 @@ export default function Home() {
         {/*  */}
 
         {/*  */}
-        <section className=" mt-16 bg-section/10 flex justify-center flex-col py-16 ">
+        <section className=" mt-16  flex justify-center flex-col py-16 ">
           <div className="flex justify-center items-center ">
             <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">
@@ -261,13 +262,81 @@ export default function Home() {
               </button>
             </article>
           </div>
-
           <div className="flex justify-center items-center sm:flex-row flex-col mt-6 ">
-          
-                 <PopularCol image={'/image.png'}/>
-                 <PopularCol image={'/image11.png'}/>
-                 <PopularCol image={'/image.png'}/>
-              
+            <PopularCol image={"/image.png"} />
+            <PopularCol image={"/image11.png"} />
+            <PopularCol image={"/image.png"} />
+          </div>
+          <div className=" mt-10 m-auto">
+            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
+              view all
+            </button>
+          </div>
+        </section>
+
+        {/*  */}
+
+        {/*  */}
+        <section className=" mt-16 bg-section/10 flex justify-center flex-col py-16 ">
+          <div className="flex justify-center items-center ">
+            <span className=" bg-purpled w-16 h-16 rounded-full "> </span>
+            <h3 className=" capitalize font-medium -ml-8 ">
+              Explore By Categories
+            </h3>
+          </div>
+          <div className=" hidden sm:block my-4 bg-yellow-300 "></div>
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0  bg-black">
+            {
+              cardInfo.map( e => {
+                <article className=" bg-card p-2 w-[18rem] h-[26rem] flex justify-center flex-col items-center  ">
+      <div className=" w-[16rem]  h-[14rem] overflow-hidden mt-2">
+        <Image
+          src={e.image}
+          alt="ImageCard"
+          width={"270px"}
+          height={"340px"}
+        />
+      </div>
+      <div className="p-2 flex flex-col justify-between align-middle mt-3 w-full items-center  ">
+
+        <div className="flex justify-between w-full h-10  ">
+          <div className=" flex  ">
+            <Image
+              alt=""
+              src="/Person2.png"
+              width={"43px"}
+              height={"40px"}
+              className='rounded-full'
+            />
+           <div className="ml-2 flex flex-col align-middle items-center -mt-2  ">
+            <h4 className="text-lg capitalize "> {e.name} </h4>
+            <h5 className="text-sm opacity-30 "> by @{e.artist}</h5>
+           </div>
+          </div>
+
+          <div className="flex items-center opacity-30 ">
+          <Image
+              alt=""
+              src="/CardImages/Icon.svg"
+              width={"20px"}
+              height={"23px"}
+            />
+            <span className="text-lg mx-1 " >{e.likes}</span>
+          </div>
+        </div>
+
+        <div className="flex justify-between  w-full mt-4 capitalize " >
+             <h5 className=" text-base opacity-50 text-white  " > current bit  </h5>
+             <h5 className=" text-base  text-white font-medium  " >  {e.price} ETH  </h5>
+             
+        </div>
+        <div > 
+          <button className="bg-blure/60  border border-white/70 mt-7 w-[16rem] text-base py-2 capitalize hover:bg-primary/90 active:bg-primary/70 "> place a bid </button>
+        </div>
+      </div>
+    </article>
+              })
+            }
           </div>
           <div className=" mt-10 m-auto">
             <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
@@ -275,11 +344,7 @@ export default function Home() {
               view all{" "}
             </button>
           </div>
-
         </section>
-
-        
-        {/*  */}
       </main>
 
       <footer id="Footer"></footer>
