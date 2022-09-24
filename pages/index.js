@@ -7,6 +7,7 @@ import Card from "../components/Card";
 import Icon from "../components/Icon";
 import PopularCol from "../components/PopularCol";
 import CardTypeTow from "../components/CardTypeTow";
+import Creator from "../components/Creator";
 
 export default function Home() {
   const cardInfo = [
@@ -273,7 +274,6 @@ export default function Home() {
             </button>
           </div>
         </section>
-
         {/*  */}
 
         {/*  */}
@@ -307,6 +307,31 @@ export default function Home() {
             </button>
           </div>
         </section>
+        {/*  */}
+
+
+        {/*  */}
+        <section className=" mt-16  flex justify-center flex-col py-16 ">
+          <div className="flex justify-center items-center ">
+            <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
+            <h3 className=" capitalize font-medium -ml-8 ">
+              Popular Collections
+            </h3>
+          </div>
+
+          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0"> 
+             
+             <Creator/>
+
+          </div>
+         
+          <div className=" mt-10 m-auto">
+            <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
+              view all
+            </button>
+          </div>
+        </section>
+        {/*  */}
       </main>
 
       <footer id="Footer"></footer>
