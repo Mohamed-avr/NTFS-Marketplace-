@@ -19,6 +19,7 @@ export default function Home() {
       price: 34.2,
       imageNFT: "/image9.png",
       buttonSell: true,
+      opacity: false ,
     },
     {
       id: 1,
@@ -28,6 +29,7 @@ export default function Home() {
       price: 49.1,
       imageNFT: "/image10.png",
       buttonSell: false,
+      opacity: false ,
     },
     {
       id: 2,
@@ -37,6 +39,75 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image.png",
       buttonSell: false,
+      opacity: false ,
+    },
+    {
+      id: 3,
+      name: "Virtual magic",
+      artist: " artiste One",
+      likes: 14,
+      price: 28.2,
+      imageNFT: "/Image1.png",
+      buttonSell: false,
+      opacity: false ,
+    },
+
+    {
+      id: 5,
+      name: "Virtual magic",
+      artist: " artiste One",
+      likes: 14,
+      price: 28.2,
+      imageNFT: "/Image3.png",
+      buttonSell: false,
+      opacity: false ,
+    },
+    {
+      id: 4,
+      name: "Virtual magic",
+      artist: " artiste One",
+      likes: 14,
+      price: 28.2,
+      imageNFT: "/Image2.png",
+      buttonSell: false,
+      opacity: false ,
+    },
+    {
+      id: 5,
+      name: "Virtual magic",
+      artist: " artiste One",
+      likes: 14,
+      price: 28.2,
+      imageNFT: "/Image3.png",
+      buttonSell: false,
+      opacity: true ,
+    },
+  ];
+
+  const creatorsList = [
+    {
+      name: "Wzard Dee",
+      price: "4.89 ETH",
+      items: "33",
+      img: "/person.png",
+    },
+    {
+      name: "Wzard Dee",
+      price: "12.09 ETH",
+      items: "122",
+      img: "/person2.png",
+    },
+    {
+      name: "Wzard Dee",
+      price: "2.15 ETH",
+      items: "42",
+      img: "/person3.png",
+    },
+    {
+      name: "Wzard Dee",
+      price: "5.31 ETH",
+      items: "42",
+      img: "/person4.png",
     },
   ];
 
@@ -189,7 +260,7 @@ export default function Home() {
             </article>
           </div>
           <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0 ">
-            {cardInfo.map((e) => {
+            {cardInfo.slice(0,3).map((e) => {
               return (
                 <Card
                   key={e}
@@ -286,7 +357,7 @@ export default function Home() {
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 "></div>
           <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0">
-          {cardInfo.map((e) => {
+            {cardInfo.splice(3,7).map((e) => {
               return (
                 <CardTypeTow
                   key={e}
@@ -295,7 +366,8 @@ export default function Home() {
                   likes={e.likes}
                   price={e.price}
                   image={e.imageNFT}
-                  buttonSell ={e.buttonSell}
+                  buttonSell={e.buttonSell}
+                  opacity={e.opacity}
                 />
               );
             })}
@@ -309,22 +381,22 @@ export default function Home() {
         </section>
         {/*  */}
 
-
         {/*  */}
         <section className=" mt-16  flex justify-center flex-col py-16 ">
           <div className="flex justify-center items-center ">
             <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">
-              Popular Collections
+            top creators
             </h3>
           </div>
 
-          <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0"> 
-             
-             <Creator/>
-
+          <div className=" m-auto sm:w-[55rem] sm:space-y-0 space-y-4 sm:h-[15rem] align-middle flex-wrap flex justify-center items-center sm:flex-row  flex-col mt-12  ">
+        
+            { creatorsList.reverse().map((e , i) => {
+              return( <Creator key={i} name={e.name} price={e.price} numberOfItems={e.items} Image={e.img} opacity={e.opacity} /> )
+            }) }
           </div>
-         
+
           <div className=" mt-10 m-auto">
             <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
               view all
