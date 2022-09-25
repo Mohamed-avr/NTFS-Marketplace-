@@ -19,7 +19,7 @@ export default function Home() {
       price: 34.2,
       imageNFT: "/image9.png",
       buttonSell: true,
-      opacity: false ,
+      opacity: false,
     },
     {
       id: 1,
@@ -29,7 +29,7 @@ export default function Home() {
       price: 49.1,
       imageNFT: "/image10.png",
       buttonSell: false,
-      opacity: false ,
+      opacity: false,
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image.png",
       buttonSell: false,
-      opacity: false ,
+      opacity: false,
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image1.png",
       buttonSell: false,
-      opacity: false ,
+      opacity: false,
     },
 
     {
@@ -60,7 +60,7 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image3.png",
       buttonSell: false,
-      opacity: false ,
+      opacity: false,
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image2.png",
       buttonSell: false,
-      opacity: false ,
+      opacity: false,
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ export default function Home() {
       price: 28.2,
       imageNFT: "/Image3.png",
       buttonSell: false,
-      opacity: true ,
+      opacity: true,
     },
   ];
 
@@ -260,7 +260,7 @@ export default function Home() {
             </article>
           </div>
           <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0 ">
-            {cardInfo.slice(0,3).map((e) => {
+            {cardInfo.slice(0, 3).map((e) => {
               return (
                 <Card
                   key={e}
@@ -357,7 +357,7 @@ export default function Home() {
           </div>
           <div className=" hidden sm:block my-4 bg-yellow-300 "></div>
           <div className="flex justify-center items-center sm:flex-row  flex-col mt-12 sm:space-x-9 space-y-3 sm:space-y-0">
-            {cardInfo.splice(3,7).map((e) => {
+            {cardInfo.splice(3, 7).map((e) => {
               return (
                 <CardTypeTow
                   key={e}
@@ -385,22 +385,56 @@ export default function Home() {
         <section className=" mt-16  flex justify-center flex-col py-16 ">
           <div className="flex justify-center items-center ">
             <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
-            <h3 className=" capitalize font-medium -ml-8 ">
-            top creators
-            </h3>
+            <h3 className=" capitalize font-medium -ml-8 ">top creators</h3>
           </div>
 
           <div className=" m-auto sm:w-[55rem] sm:space-y-0 space-y-4 sm:h-[15rem] align-middle flex-wrap flex justify-center items-center sm:flex-row  flex-col mt-12  ">
-        
-            { creatorsList.reverse().map((e , i) => {
-              return( <Creator key={i} name={e.name} price={e.price} numberOfItems={e.items} Image={e.img} opacity={e.opacity} /> )
-            }) }
+            {creatorsList.reverse().map((e, i) => {
+              return (
+                <Creator
+                  key={i}
+                  name={e.name}
+                  price={e.price}
+                  numberOfItems={e.items}
+                  Image={e.img}
+                  opacity={e.opacity}
+                />
+              );
+            })}
           </div>
 
           <div className=" mt-10 m-auto">
             <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
               view all
             </button>
+          </div>
+        </section>
+        {/*  */}
+
+        {/*  */}
+        <section className="flex justify-center items-center flex-col relative  mt-10 ">
+          <div className="absolute z-0 top-0 left-0 overflow-hidden sm:h-[200px] h-[200px]">
+            <Image
+              src={"/Pattern.png"}
+              alt="PatternBackground"
+              width="1500"
+              height="750px"
+            />
+          </div>
+          <div className="z-10 text-center">
+            <h3 className="font-bold">Ready for Next NFT Drop? </h3>
+            <form className="flex sm:flex-row flex-col justify-center items-center align-middle py-5 mt-2">
+              <input
+                className=" bg-transparent border-l  border-y sm:border-r-0 border-r border-primary h-16 pl-6 text-base w-72 text-white outline-none "
+                type="text"
+                placeholder="info@gmail.com"
+              />
+              <input
+                className="bg-primary text-base h-16 sm:w-28 w-72 sm:mt-0 mt-2 capitalize text-black font-medium"
+                type="submit"
+                value="subscibe"
+              />
+            </form>
           </div>
         </section>
         {/*  */}

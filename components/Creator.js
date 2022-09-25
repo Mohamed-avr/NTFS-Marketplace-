@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Creator = (props) => {
   return (
-    <article className=" border-redbobble border-l-2 w-[23rem] h-20 bg-card flex justify-between items-center mx-3">
+    <article className=" border-redbobble border-l-2 sm:w-[23rem] w-[20rem] h-20 bg-card flex justify-between items-center mx-3">
       <div className="flex  items-center ml-3 ">
         <div className="rounded-full"> 
            <Image alt="" src={props.Image} width={'50px'} height={'50px'} />
