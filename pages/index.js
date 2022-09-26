@@ -8,6 +8,7 @@ import Icon from "../components/Icon";
 import PopularCol from "../components/PopularCol";
 import CardTypeTow from "../components/CardTypeTow";
 import Creator from "../components/Creator";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const cardInfo = [
@@ -412,18 +413,18 @@ export default function Home() {
         {/*  */}
 
         {/*  */}
-        <section className="flex justify-center items-center flex-col relative  mt-10 ">
-          <div className="absolute z-0 top-0 left-0 overflow-hidden sm:h-[200px] h-[200px]">
+        <section className="flex justify-center items-center flex-col relative  mt-10 overflow-hidden py-5 ">
+          <div className="absolute z-0 top-0 left-0 overflow-hidden sm:h-[300px] hidden sm:flex ">
             <Image
               src={"/Pattern.png"}
               alt="PatternBackground"
               width="1500"
-              height="750px"
+              height="950px"
             />
           </div>
-          <div className="z-10 text-center">
-            <h3 className="font-bold">Ready for Next NFT Drop? </h3>
-            <form className="flex sm:flex-row flex-col justify-center items-center align-middle py-5 mt-2">
+          <div className="z-10 text-center mt-14 ">
+            <h3 className="font-bold ">Ready for Next NFT Drop? </h3>
+            <form className="flex sm:flex-row flex-col justify-center items-center align-middle py-10 ">
               <input
                 className=" bg-transparent border-l  border-y sm:border-r-0 border-r border-primary h-16 pl-6 text-base w-72 text-white outline-none "
                 type="text"
@@ -438,9 +439,10 @@ export default function Home() {
           </div>
         </section>
         {/*  */}
+        {/*  */}
+        <Footer />
+        {/*  */}
       </main>
-
-      <footer id="Footer"></footer>
     </div>
   );
 }
