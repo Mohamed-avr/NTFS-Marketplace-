@@ -16,14 +16,15 @@ const Navbar = () => {
         NavRef.current.classList.add('bg-ground')
         NavRef.current.classList.remove('sm:bg-transparent')
         NavRef.current.classList.add('sm:bg-ground')
+        NavRef.current.classList.add('shadow-2xl')
       } 
       
       if(window.scrollY < 200) {
         NavRef.current.classList.add('bg-ground/90')
         NavRef.current.classList.remove('bg-ground')
         NavRef.current.classList.add('sm:bg-transparent')
-        NavRef.current.classList.remove
-        ('sm:bg-ground')
+        NavRef.current.classList.remove('sm:bg-ground')
+        NavRef.current.classList.remove('shadow-2xl')
       }
 
     }
