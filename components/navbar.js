@@ -10,7 +10,7 @@ const Navbar = () => {
 
     if (typeof window !== "undefined") {
     window.onscroll= () => {
-      console.log(window.scrollY)
+  
       if(window.scrollY > 200) {
         NavRef.current.classList.remove('bg-ground/90')
         NavRef.current.classList.add('bg-ground')

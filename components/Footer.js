@@ -1,7 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
+import SocialMediaLinks from "./SocialMediaLinks";
+import { useState , useEffect } from "react";
 
 const Footer = () => {
+ 
+  const [showMedia , setShowMedia] = useState(false)
+
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+      console.log(window.scrollY);
+      if ( window.innerWidth  > 500) {
+           setShowMedia(true)
+           console.log(showMedia)
+      }
+
+      if (window.innerWidth  < 500) {
+        setShowMedia(false)
+        console.log(showMedia)
+
+      }
+    };
+  }
+)
+
+
+
   return (
     <footer className=" bg-bgFooter mt-0 flex justify-center items-center sm:flex-row flex-col ">
       <div className="  sm:w-2/4 w-full h-[20rem]  flex sm:justify-evenly justify-start items-center sm:flex-row flex-col">
@@ -16,58 +40,32 @@ const Footer = () => {
         <div className="text-lg">
           <p className=" sm:text-left text-center text-base sm:w-80 w-full sm:m-0 m-auto text-white/40 ">
             Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla
-            pharetra gravida est.{" "}
-          </p>
-          <div className="flex sm:justify-start justify-center space-x-5 w-72 sm:mx-0 mt-5 m-auto   ">
-            <div>
-              {" "}
-              <Link href="#">
-                <Image
-                  alt="socialmedia"
-                  src="/Vector.png"
-                  width="24px"
-                  height="17px"
-                />
-              </Link>
-            </div>
-            <div>
-              <Link href="#">
-                <Image
-                  alt="socialmedia"
-                  src="/Vector-1.png"
-                  width="23px"
-                  height="19px"
-                />
-              </Link>
-            </div>
-            <div>
-              <Link href="#">
-                <Image
-                  alt="socialmedia"
-                  src="/Vector-2.png"
-                  width="15px"
-                  height="20px"
-                />
-              </Link>
-            </div>
-            <div>
-              <Link href="#">
-                <Image
-                  alt="socialmedia"
-                  src="/Vector-3.png"
-                  width="24px"
-                  height="17px"
-                />
-              </Link>
-            </div>
-          </div>
-          <h5 className="sm:mt-10 mt-6 text-base text-white/40  sm:text-left text-center">
-            {" "}
-            All rights reserved@2021
-          </h5>
+            pharetra gravida est.
+          </p>   
+        { showMedia ?  <div > <SocialMediaLinks /></div> : ''  }  
         </div>
       </div>
-      <div className="w-2/4 h-[20rem]"> </div>
+      <div className="sm:w-2/4 w-full sm:h-[20rem] h-[14rem] -sm:ml-[20rem]  flex justify-evenly items-center sm:flex-row ">
+        <ul className="flex flex-col text-base space-y-2 text-white/40 capitalize ">
+           <li className=" font-bold text-lg text-white mb-3 "> <Link href='' > About us</Link></li>
+           <li> <Link href='' > About NFTs</Link></li>
+           <li> <Link href='' > Live auctions</Link></li>
+           <li> <Link href='' > NFT Blog</Link></li>
+           <li> <Link href='' > activity</Link></li>
+        </ul>
+        <ul className="flex flex-col text-base space-y-2 text-white/40 capitalize ">
+           <li className=" font-bold text-lg text-white mb-3 "> <Link href='' > support</Link></li>
+           <li> <Link href='' > help & support</Link></li>
+           <li> <Link href='' > item details</Link></li>
+           <li> <Link href='' > author profile</Link></li>
+           <li> <Link href='' > collection</Link></li>
+        </ul>
+       
+      </div>
+  
+
+     { !showMedia ? <div  > <SocialMediaLinks /></div>     : ''  }
+      
     </footer>
   );
 };
