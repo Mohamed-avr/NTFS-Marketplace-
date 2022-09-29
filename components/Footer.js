@@ -24,8 +24,6 @@ const Footer = () => {
   }
 )
 
-
-
   return (
     <footer className=" bg-bgFooter mt-0 flex justify-center items-center sm:flex-row flex-col ">
       <div className="  sm:w-2/4 w-full h-[20rem]  flex sm:justify-evenly justify-start items-center sm:flex-row flex-col">

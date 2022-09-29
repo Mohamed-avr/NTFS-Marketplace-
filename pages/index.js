@@ -439,10 +439,11 @@ export default function Home() {
           </div>
         </section>
         {/*  */}
-        {/*  */}
-        <Footer />
-        {/*  */}
+{/*  */}
+      <Footer/>
+      
       </main>
+
     </div>
   );
 }
