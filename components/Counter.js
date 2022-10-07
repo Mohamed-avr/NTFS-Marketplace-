@@ -19,3 +19,9 @@ const Counter = () => {
 };
 
 export default Counter;
+
+// empty comment 
+
+const afunction = (a , b) => {
+  console.log(2*b)
+}
