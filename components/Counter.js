@@ -3,7 +3,7 @@ import { useState } from "react";
 const Counter = () => {
   
   let [ seconds , setSecounds] = useState(10)
-  let [ minutes , setMinutes] = useState(10)
+  let [ minutes , setMinutes] = useState(40)
   
 
   return (
