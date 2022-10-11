@@ -28,7 +28,7 @@ const Card = (props) => {
               height={"40px"}
               className='rounded-full'
             />
-            <Counter/>
+            <Counter />
            <div className="ml-2 flex flex-col align-middle items-center -mt-2  ">
             <h4 className="text-lg capitalize "> {props.name} </h4>
             <h5 className="text-sm opacity-30 "> by @{props.artist}</h5>
