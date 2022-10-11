@@ -9,6 +9,7 @@ import PopularCol from "../components/PopularCol";
 import CardTypeTow from "../components/CardTypeTow";
 import Creator from "../components/Creator";
 import Footer from "../components/Footer";
+import FooterResonsive from "../components/FooterResponsive";
 
 export default function Home() {
   const cardInfo = [
@@ -122,8 +123,9 @@ export default function Home() {
 
       {/* ----------  */}
       <Navbar />
+      <FooterResonsive/>
       {/* ----------- */}
-      <main className=" ">
+      <main className=" " id="explore">
         <section className=" h-screen sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">
           {/*  top */}
           <div className=" sm:pl-20  z-10 ">
@@ -383,7 +385,7 @@ export default function Home() {
         {/*  */}
 
         {/*  */}
-        <section className=" mt-16  flex justify-center flex-col py-16 ">
+        <section id="creators" className=" mt-16  flex justify-center flex-col py-16 ">
           <div className="flex justify-center items-center ">
             <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">top creators</h3>
