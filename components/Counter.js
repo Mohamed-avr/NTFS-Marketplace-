@@ -30,6 +30,11 @@ let theCounter  = setInterval(() => {
   setminutes(Math.floor((diffTime% (1000 * 60 * 60)) / (1000 * 60)))
   setsecounds(Math.floor((diffTime  % (1000 * 60)) / 1000) )
 
+
+   if(diffTime<0) {
+    clearInterval(theCounter)
+   }
+
 }, 1000);
 
 useEffect( () => {
