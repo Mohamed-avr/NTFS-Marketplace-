@@ -9,7 +9,8 @@ import PopularCol from "../components/PopularCol";
 import CardTypeTow from "../components/CardTypeTow";
 import Creator from "../components/Creator";
 import Footer from "../components/Footer";
-import FooterResonsive from "../components/FooterResponsive";
+import NavResponsive from "../components/NavResponsive";
+import { useState } from "react";
 
 export default function Home() {
   const cardInfo = [
@@ -113,6 +114,16 @@ export default function Home() {
     },
   ];
 
+  const [clicked , setClicked] = useState(false);
+
+  const HandlingClicker  = () => {
+   clicked === true ? setClicked(false) : setClicked(true) ;
+ 
+  } 
+
+  console.log(` clicked : ${clicked}`)
+
+
   return (
     <div className=" text-3xl text-white ">
       <Head>
@@ -122,8 +133,9 @@ export default function Home() {
       </Head>
 
       {/* ----------  */}
-      <Navbar />
-      <FooterResonsive/>
+      <Navbar HandlingClickerFunction={HandlingClicker} />
+      <NavResponsive navState={clicked}  HandlingClickerFunction={HandlingClicker} />
+  
       {/* ----------- */}
       <main className=" " id="explore">
         <section className=" h-screen sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">

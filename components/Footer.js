@@ -12,12 +12,11 @@ const Footer = () => {
       console.log(window.scrollY);
       if ( window.innerWidth  > 500) {
            setShowMedia(true)
-           console.log(showMedia)
+         
       }
 
       if (window.innerWidth  < 500) {
         setShowMedia(false)
-        console.log(showMedia)
 
       }
     };

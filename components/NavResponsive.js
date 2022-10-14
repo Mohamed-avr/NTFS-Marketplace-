@@ -1,20 +1,17 @@
 import Link from "next/link";
 import { useRef } from "react";
 
-const FooterResonsive = () => {
+const NavResponsive = (props) => {
 
     const Navbar = useRef();
 
-     const closeNav = () => {
-        Navbar.current.classList.remove('flex');
-        Navbar.current.classList.add('hidden')
-     }
-
+  
   return (
-    <article ref={Navbar} className="w-full h-full fixed top-0 left-0 z-30 bg-black/90 sm:hidden flex  justify-start flex-col items-center ">
-      <div className="mt-10">
-        <button className="w-14 h-14 text-white  rounded-full  text-5xl "
-        onClick={closeNav}>
+    <article ref={Navbar}  className={props.navState ? 'bg-black/90 w-screen h-screen  fixed z-40 top-0': 'bg-black w-screen h-screen hidden  fixed z-40 top-0' } >
+   
+      <div className="mt-10 flex justify-center">
+        <button className="w-14 h-14 text-white  rounded-full  text-5xl  "
+        onClick={props.HandlingClickerFunction}>
           x
         </button>
       </div>
@@ -25,7 +22,7 @@ const FooterResonsive = () => {
            
             <Link href={'#explore'}>  explore</Link> 
           </li>
-          <li > <Link href={'#creators'}> creators</Link> </li>
+          <li > <Link href={'#creators'}> creators </Link> </li>
           <li > comunity </li>
         </ul>
       </div>
@@ -33,4 +30,4 @@ const FooterResonsive = () => {
   );
 };
 
-export default FooterResonsive;
+export default NavResponsive ;
