@@ -23,7 +23,7 @@ const NavResponsive = (props) => {
             <Link href={'#explore'}>  explore</Link> 
           </li>
           <li > <Link href={'#creators'}> creators </Link> </li>
-          <li > comunity </li>
+          <li > <Link href={'#comunity'}> comunity </Link>   </li>
         </ul>
       </div>
     </article>

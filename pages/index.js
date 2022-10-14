@@ -436,7 +436,7 @@ export default function Home() {
               height="950px"
             />
           </div>
-          <div className="z-10 text-center mt-14 ">
+          <div className="z-10 text-center mt-14 "  id="comunity">
             <h3 className="font-bold ">Ready for Next NFT Drop? </h3>
             <form className="flex sm:flex-row flex-col justify-center items-center align-middle py-10 ">
               <input
