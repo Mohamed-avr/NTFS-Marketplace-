@@ -1,6 +1,6 @@
 
 ## About !
-its alanding Page for NFT  Marketplace  , first it was a ui design then translated to frontend app 
+It's a Landing Page for NFT  Marketplace  , first it was a ui design then translated to frontend app 
 
 The UI design in Figma comunity :  [here](https://www.figma.com/file/A8GXGERTwAAD5bx3kPkrE3/NFT-Dark-Responsive-Landing-Page-UI-UX-Design-Free-Download-(Community)?node-id=5%3A705) 
 
