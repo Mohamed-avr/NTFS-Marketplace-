@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SocialMediaLinks = () => {
- 
   return (
     <>
       <div className="flex sm:justify-start justify-center space-x-5 w-72 sm:mx-0 mt-5 m-auto   ">

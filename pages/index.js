@@ -114,15 +114,13 @@ export default function Home() {
     },
   ];
 
-  const [clicked , setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
-  const HandlingClicker  = () => {
-   clicked === true ? setClicked(false) : setClicked(true) ;
- 
-  } 
+  const HandlingClicker = () => {
+    clicked === true ? setClicked(false) : setClicked(true);
+  };
 
-  console.log(` clicked : ${clicked}`)
-
+  console.log(` clicked : ${clicked}`);
 
   return (
     <div className=" text-3xl text-white ">
@@ -134,8 +132,11 @@ export default function Home() {
 
       {/* ----------  */}
       <Navbar HandlingClickerFunction={HandlingClicker} />
-      <NavResponsive navState={clicked}  HandlingClickerFunction={HandlingClicker} />
-  
+      <NavResponsive
+        navState={clicked}
+        HandlingClickerFunction={HandlingClicker}
+      />
+
       {/* ----------- */}
       <main className=" " id="explore">
         <section className=" h-screen sm:pt-40 pt-28 flex justify-between  sm:flex-flow flex-wrap  w-full   ">
@@ -295,6 +296,7 @@ export default function Home() {
             </button>
           </div>
         </section>
+        {/*  */}
 
         {/*  */}
         <section>
@@ -350,9 +352,9 @@ export default function Home() {
             </article>
           </div>
           <div className="flex justify-center items-center sm:flex-row flex-col mt-6 ">
-            <PopularCol image={"/image.png"} />
-            <PopularCol image={"/image11.png"} />
-            <PopularCol image={"/image.png"} />
+            <PopularCol image="/image.png" />
+            <PopularCol image="/image11.png" />
+            <PopularCol image="/image.png" />
           </div>
           <div className=" mt-10 m-auto">
             <button className="capitalize m-auto text-base border-primary border-[0.2px] px-10 py-[8px] hover:bg-primary/90 active:bg-primary/70">
@@ -397,7 +399,10 @@ export default function Home() {
         {/*  */}
 
         {/*  */}
-        <section id="creators" className=" mt-16  flex justify-center flex-col py-16 ">
+        <section
+          id="creators"
+          className=" mt-16  flex justify-center flex-col py-16 "
+        >
           <div className="flex justify-center items-center ">
             <span className=" bg-redbobble w-16 h-16 rounded-full "> </span>
             <h3 className=" capitalize font-medium -ml-8 ">top creators</h3>
@@ -436,7 +441,7 @@ export default function Home() {
               height="950px"
             />
           </div>
-          <div className="z-10 text-center mt-14 "  id="comunity">
+          <div className="z-10 text-center mt-14 " id="comunity">
             <h3 className="font-bold ">Ready for Next NFT Drop? </h3>
             <form className="flex sm:flex-row flex-col justify-center items-center align-middle py-10 ">
               <input
@@ -453,11 +458,13 @@ export default function Home() {
           </div>
         </section>
         {/*  */}
-{/*  */}
-      <Footer/>
-      
-      </main>
 
+        {/*  */}
+        <Footer />
+        {/*  */}
+
+        
+      </main>
     </div>
   );
 }
